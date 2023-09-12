@@ -1,10 +1,13 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
-def index(request):
-    return HttpResponse("Главная")
+def home(request):
+    return render(request, "home.html")
  
 def about(request):
-    return HttpResponse("О сайте")
+    return render(request, "about.html")
  
-def contact(request):
-    return HttpResponse("Контакты")
+def reviews(request):
+    return render(request, "reviews.html")
+
+def news(request):
+    return render(request, "news.html")
