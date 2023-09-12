@@ -1,3 +1,16 @@
+# Install 
+
+```
+
+git clone https://github.com/SapeNeCo/GenBuild 
+
+py -m venv venv
+
+py -m pip install -r requirements.txt
+
+```
+
+
 # Site Structure
 
 #GenBuild_Главная
