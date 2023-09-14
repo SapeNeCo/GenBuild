@@ -22,28 +22,6 @@
             height: 7vh;
             background-color: black;
         }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: black;
-            bottom: 100%;
-            width: 100%;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        .dropdown-content a {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            text-align: center;
-            text-decoration: none;
-            color: black;
-        }
         .btn {
             text-align: center;
             width: 100%;
@@ -63,27 +41,42 @@
             color: white;
             font-weight: 500;
         }
+        .dropdown-menu {
+            background-color: black;
+        }
     </style>
 </head>
 <body>
     <header class="container-fluid">
         <div class="colum">
-            <table style="width: 100%;">
-                <tr>
-                    <td>
-                        <div class="dropdown">
-                            <button class="btn">Главная</button>
-                            <div class="dropdown-content">
-                                <a class="btn_active" href="{% url 'home' %}">Главная</a>
-                                <a class="btn" href="{% url 'about' %}">Информация</a>
-                                <a class="btn" href="{% url 'contacts' %}">Контакты</a>
-                                <a class="btn" href="{% url 'reviews' %}">Отзывы</a>
-                                <a class="btn" href="{% url 'news' %}">Новости</a>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                Главная
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Навигация</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <a class="btn" href="{% url 'home' %}">Главная</a>
+                    <a class="btn" href="{% url 'about' %}">Информация</a>
+                    <a class="btn" href="{% url 'contacts' %}">Контакты</a>
+                    <a class="btn" href="{% url 'reviews' %}">Отзывы</a>
+                    <a class="btn" href="{% url 'news' %}">Новости</a>
+                </div>
+            </div>
+            <!-- <div class="btn-group dropup">
+                <button type="button" class="btn w-100" data-bs-toggle="dropdown" aria-expanded="false">
+                    Главная
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                    <li><a class="btn dropdown-item w-100" href="{% url 'home' %}">Главная</a></li>
+                    <li><a class="btn dropdown-item w-100" href="{% url 'about' %}">Информация</a></li>
+                    <li><a class="btn dropdown-item w-100" href="{% url 'contacts' %}">Контакты</a></li>
+                    <li><a class="btn dropdown-item w-100" href="{% url 'reviews' %}">Отзывы</a></li>
+                    <li><a class="btn dropdown-item w-100" href="{% url 'news' %}">Новости</a></li>
+                </ul>
+            </div> -->
         </div>
     </header>
     <div class="main">
@@ -131,4 +124,5 @@
         <p>бла-бла-бла</p>
     </div>
 </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
