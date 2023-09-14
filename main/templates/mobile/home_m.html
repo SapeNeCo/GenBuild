@@ -44,6 +44,12 @@
         .dropdown-menu {
             background-color: black;
         }
+        .offcanvas-header {
+            background-color: black;
+        }
+        .offcanvas-body {
+            background-color: black;
+        }
     </style>
 </head>
 <body>
@@ -58,7 +64,7 @@
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <a class="btn" href="{% url 'home' %}">Главная</a>
+                    <a class="btn" data-bs-dismiss="offcanvas">Главная</a>
                     <a class="btn" href="{% url 'about' %}">Информация</a>
                     <a class="btn" href="{% url 'contacts' %}">Контакты</a>
                     <a class="btn" href="{% url 'reviews' %}">Отзывы</a>
