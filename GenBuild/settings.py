@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-!sgyjy3k8^h3mb_i-yncz*$^4t@2l!!b-4fd09x)i9(2@ax5*(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['gulysh.art']
+ALLOWED_HOSTS = ['gulysh.art', '127.0.0.1']
 
 
 # Application definition
