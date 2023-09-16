@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 .col-sm {
     display: flex;
@@ -40,9 +41,6 @@
     color: white;
     font-weight: 500;
 }
-.main {
-    background-color: white;
-}
 .header {
     display: flex;
     justify-content: center;
@@ -57,4 +55,11 @@
     position: absolute;
     width: 50%;
     height: 9rem;
+}
+.reviews {
+    top: 30px;
+    width: 750px;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
 }
