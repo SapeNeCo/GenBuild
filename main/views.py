@@ -35,3 +35,10 @@ def news(request):
         return render(request, "pc/news.html")
     else:
         return render(request, "mobile/news_m.html")
+
+def partners(request):
+    user = get_user_agent(request)
+    if user.is_pc:
+        return render(request, "pc/partners.html")
+    else:
+        return render(request, "mobile/partners_m.html")

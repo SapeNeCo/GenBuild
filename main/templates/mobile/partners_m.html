@@ -13,7 +13,7 @@
     <header class="container-fluid">
         <div class="colum">
             <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                Новости
+                Партнёры
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
@@ -24,9 +24,9 @@
                     <a class="btn" href="{% url 'home' %}">Главная</a>
                     <a class="btn" href="{% url 'about' %}">Информация</a>
                     <a class="btn" href="{% url 'contacts' %}">Контакты</a>
-                    <a class="btn" href="{% url 'partners' %}">Партнёры</a>
+                    <a class="btn" data-bs-dismiss="offcanvas">Партнёры</a>
                     <a class="btn" href="{% url 'reviews' %}">Отзывы</a>
-                    <a class="btn" data-bs-dismiss="offcanvas">Новости</a>
+                    <a class="btn" href="{% url 'news' %}">Новости</a>
                 </div>
             </div>
         </div>
