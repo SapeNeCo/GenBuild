@@ -15,14 +15,16 @@
         <img class="logo" src="{% static 'img/header.svg' %}">
     </div>
     <header class="container-fluid">
-        <div class="col-sm">
-            <a class="btn" href="{% url 'home' %}">Главная</a>
-            <a class="btn" href="{% url 'about' %}">Информация</a>
-            <a class="btn" href="{% url 'contacts' %}">Контакты</a>
-            <a class="btn_active" href="{% url 'partners' %}">Партнёры</a>
-            <a class="btn" href="{% url 'reviews' %}">Отзывы</a>
-            <a class="btn" href="{% url 'news' %}">Новости</a>
-        </div>
+        <table class="col-sm">
+            <tr>
+                <td class="block"><a class="btn" href="{% url 'home' %}">Главная</a></td>
+                <td class="block"><a class="btn" href="{% url 'about' %}">Информация</a></td>
+                <td class="block"><a class="btn" href="{% url 'contacts' %}">Контакты</a></td>
+                <td class="block"><a class="btn active border-bottom border-white border-5 rounded-5" href="{% url 'partners' %}">Партнёры</a></td>
+                <td class="block"><a class="btn" href="{% url 'reviews' %}">Отзывы</a></td>
+                <td class="block"><a class="btn" href="{% url 'news' %}">Новости</a></td>
+            </tr>
+        </table>
     </header>
     <div class="main">
         <p>бла-бла-бла</p>
