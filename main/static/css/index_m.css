@@ -43,3 +43,10 @@
 .white {
     color: white;
 }
+.close-btn {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+}
