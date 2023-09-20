@@ -18,10 +18,13 @@
     z-index: 2;
 }
 .main {
+    width: 100%;
+    height: 100%;
     font-size: 300;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: white;
     z-index: 1;
 }
@@ -69,16 +72,41 @@
     height: 9rem;
 }
 .reviews {
-    top: 30px;
-    width: 750px;
-    height: 800px;
-    overflow: hidden;
-    position: relative;
+    margin-bottom: 5rem;
+    width:560px;
+    height:800px;
 }
 .reviews_main {
     width:100%;
-    height:90%;
-    border:1px solid #e6e6e6;
-    border-radius:8px;
-    box-sizing:border-box
+    height:100%;
+    z-index: 1;
+}
+.predis {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+}
+.predis:before,
+.predis:after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.predis:before {
+    width: 80%;
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: black;
+    margin-bottom: 1rem;
+    top: -1rem;
+}
+.predis:after {
+    width: 70%;
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: black;
+    margin-top: 1rem;
 }
