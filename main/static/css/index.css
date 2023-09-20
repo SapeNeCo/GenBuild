@@ -11,11 +11,10 @@
 }
 .ender {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
+    width: 100%;
+    flex-direction: column;
     background-color: black;
-    z-index: 2;
+    color: white;
 }
 .main {
     width: 100%;
@@ -46,7 +45,7 @@
     border: none;
     background: none;
     color: white;
-    font-weight: 1200;
+    font-size: 20px;
 }
 .active:hover,
 .active {
@@ -109,4 +108,8 @@
     height: 5px;
     background-color: black;
     margin-top: 1rem;
+}
+.post_text {
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
