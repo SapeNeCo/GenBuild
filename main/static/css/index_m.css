@@ -64,3 +64,34 @@
     height:100%;
     z-index: 1;
 }
+.predis {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    position: relative;
+}
+.predis:before,
+.predis:after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.predis:before {
+    width: 80%;
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: black;
+    margin-bottom: 1rem;
+    top: -1rem;
+}
+.predis:after {
+    width: 70%;
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: black;
+    margin-top: 1rem;
+}
