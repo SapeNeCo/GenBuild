@@ -27,6 +27,17 @@
     background-color: white;
     z-index: 1;
 }
+.ender {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
 .btn {
     text-align: center;
     width: 100%;
