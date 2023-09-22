@@ -47,14 +47,6 @@
     color: white;
     font-size: 20px;
 }
-.active:hover,
-.active {
-    text-decoration: none;
-    border: none;
-    background: none;
-    color: white;
-    font-weight: 1200;
-}
 .header {
     display: flex;
     justify-content: center;
@@ -112,4 +104,12 @@
 .post_text {
     margin-top: 1rem;
     margin-left: 1rem;
+}
+.photo {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+.center {
+    text-align: center;
 }
