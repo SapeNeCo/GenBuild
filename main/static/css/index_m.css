@@ -112,4 +112,6 @@
 }
 .h3 {
     width: 90%;
+    text-align: center;
+    position: relative;
 }
